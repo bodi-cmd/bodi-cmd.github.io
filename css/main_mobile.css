@@ -36,7 +36,7 @@ width:80vw;
     width:80vw;margin-left:10vw;
 }
 .page{
-    min-height:100vh;
+    min-height:110vh;
 }
 .row{
     padding-top: 30vh;
@@ -53,6 +53,7 @@ width:80vw;
     color:var(--lightText);
     text-align: center;
     text-shadow:2px 2px 0px #a487ff;
+    width:95vw;
 }
 .land_img{
     display:none;
@@ -78,6 +79,8 @@ width:80vw;
     padding-top:50px;
     color:var(--lightText);
     text-align: center;
+    width:95vw;
+    font-size: 30px;
 }
 #touch{
     background:var(--colorDarkBG);
@@ -232,6 +235,7 @@ span{
     text-align: left;
     margin-left:10vw;
     color:var(--lightText);
+    font-size: 25px;
 }
 
 #name_form{

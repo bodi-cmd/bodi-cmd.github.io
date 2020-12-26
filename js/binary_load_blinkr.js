@@ -13,16 +13,16 @@ function preload(i){
     url = url + i.toString(10);
     url = url+".webp";
     img1[i].src = url;
-    console.log(1);
+   // console.log(1);
     sleep(100);
 }
 function binary_load(l,r){
     for(i=1;i<=Math.floor(Math.log2(r))+1;i++){
-        console.log("i="+i);
+        //console.log("i="+i);
         for(j=1;j<=Math.pow(2,i);j++){
-            console.log("j="+j)
+       //     console.log("j="+j)
             preload(Math.floor(r/Math.pow(2,i)*j));
-            console.log(1)
+      //      console.log(1)
         }
     }
 }
