@@ -63,8 +63,8 @@ body{
 .bulb{
     position:absolute;
     z-index:-999999;
-    width:18vw;
-    top:calc(45vh - 10vw);
+    width:9vw;
+    top:calc(45vh - 4.5vw);
 }
 #bulb_rand{
     left:80vw;
