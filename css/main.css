@@ -29,9 +29,10 @@ body{
 }
 .hero{
     height:100vh;
-    background: url("../img/cover_transparent.png") no-repeat;
+    background: url("../img/cover_transparent.webp") no-repeat;
     background-position: right 50% bottom calc(7vh + 50%);
     background-size: 70%;
+    z-index:3;
     
 }
 .ideation{
@@ -60,12 +61,70 @@ body{
     text-align: center;
     font-size:2vw;
 }
+@keyframes sketch {
+    0% {
+        opacity:1;
+        transform: translateX(-100%);
+    }
+    10%{
+        transform:translateX(0);
+        opacity:1;
+    }
+    44.9%{
+        opacity:1;
+        transform: translateX(44vw);
+    }
+    45%{
+        opacity:0;
+    }
+    100% {
+        transform: translateX(88vw);
+        opacity:0;
+    }
+  }
+@keyframes render {
+    0% {
+        transform: translateX(-100%);
+        opacity:0;
+    }
+    10%{
+        transform:translateX(0);
+        opacity:0;
+    }
+    44.9%{
+        transform: translateX(44vw);
+        opacity:0;
+    }
+    45%{
+        opacity:1;
+    }
+    100% {
+        transform: translateX(88vw);
+        opacity:1;
+    }
+  }
+  
 .bulb{
     position:absolute;
-    z-index:-999999;
+    z-index:-51;
     width:9vw;
+    height:9vw;
+    background-position: right 50% bottom 50%;
+    background-size:100%;
+    transform: translateX(88vw);
     top:calc(45vh - 4.5vw);
 }
 #bulb_rand{
-    left:80vw;
+    background: url("../img/bulb_rend.png") no-repeat;
+    background-position: right 50% bottom 50%;
+    background-size:100%;
+    animation: 10s ease-in-out 0s 1 render;
+    opacity: 1;
+}
+#bulb_sk{
+    background: url("../img/sk_bulb_2.PNG") no-repeat;
+    background-position: right 50% bottom 50%;
+    background-size:100%;
+    opacity:0;
+    animation: 10s ease-in-out 0s 1 sketch;
 }
