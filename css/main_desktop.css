@@ -133,56 +133,6 @@ span{
 
 
 
-#blinkr_id{
-    padding-top:50px;
-    color:var(--lightText);
-    text-align: right;
-    margin-right:150px;
-    text-shadow:2px 2px 0px #a487ff;
-    font-family: "Ubuntu";
-}
-#blinkr{
-    width:30%;margin-left:100px;float:left;
-}
-#sportier{
-    width:30%;margin-right:100px;float:right;
-}
-#blinkr_subtitle{
-    color:var(--lightText);
-    text-align: right;
-    margin-right:150px;
-    font-family: "Ubuntu";
-}
-.blinkr p{
-    margin-top:60px;
-    text-align: right;
-    margin-right:150px;
-    margin-left:30px;
-    color:var(--lightText);
-}
-
-#sportier_id{
-    padding-top:50px;
-    color:var(--lightText);
-    text-align: left;
-    margin-left:150px;
-    text-shadow:2px 2px 0px #a487ff;
-    font-family: "Ubuntu";
-}
-
-#sportier_subtitle{
-    color:var(--lightText);
-    text-align: left;
-    margin-left:150px;
-    font-family: "Ubuntu";
-}
-.sportier p{
-    margin-top:60px;
-    text-align: left;
-    margin-left:150px;
-    color:var(--lightText);
-    margin-right:30px;
-}
 
 #story{
     padding-top:50px;
@@ -294,9 +244,56 @@ span{
 .page:nth-child(odd) {
     background: var(--colorDarkBG);
   }
+.page:nth-child(odd) .project_title{
+    padding-top:50px;
+    color:var(--lightText);
+    text-align: right;
+    margin-right:150px;
+    text-shadow:2px 2px 0px #a487ff;
+    font-family: "Ubuntu";
+  }
+  .page:nth-child(odd) .project_subtitle{
+    color:var(--lightText);
+    text-align: right;
+    margin-right:150px;
+    font-family: "Ubuntu";
+  }
+  .page:nth-child(odd) .pp{
+    margin-top:60px;
+    text-align: right;
+    margin-right:150px;
+    margin-left:30px;
+    color:var(--lightText);
+  }
+  .page:nth-child(odd) .threesixty{
+    width:30%;margin-left:100px;float:left;
+  }
   
 .page:nth-child(even) {
     background: var(--colorLightBG);
   }
-
+  .page:nth-child(even) .project_title{
+    padding-top:50px;
+    color:var(--lightText);
+    text-align: left;
+    margin-left:150px;
+    text-shadow:2px 2px 0px #a487ff;
+    font-family: "Ubuntu";
+  }
+  .page:nth-child(even) .project_subtitle{
+    color:var(--lightText);
+    text-align: left;
+    margin-left:150px;
+    font-family: "Ubuntu";
+  }
+  .page:nth-child(even) .pp{
+    margin-top:60px;
+    text-align: left;
+    margin-left:150px;
+    color:var(--lightText);
+    margin-right:30px;
+  }
+  .page:nth-child(even) .threesixty{
+    width:30%;margin-right:100px;float:right;
+  }
 }
