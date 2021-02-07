@@ -1,0 +1,71 @@
+:root{
+    --colorDarkBG: #20124d;
+    --colorDarkContent: #847dff;
+    --colorLightBG: #362a5f;
+    --colorLightContent: #a487ff;
+    --logoBackground: #2E1F5F;
+    --lightText: white;
+    color: var(--lightText);
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Ubuntu";
+    outline: none;
+}
+
+
+body{
+    background:var(--colorDarkBG);
+}
+
+html{
+    width:100%;
+}
+body{
+    width:100%;
+    background:black;
+}
+.hero{
+    height:100vh;
+    background: url("../img/cover_transparent.png") no-repeat;
+    background-position: right 50% bottom calc(7vh + 50%);
+    background-size: 70%;
+    
+}
+.ideation{
+    width:90%;
+    height:18vw;
+    padding:calc(44vh - 9vw) 5% 5%;
+    display:flex;
+    justify-content: center;
+}
+.ideation img{
+    width:18vw;
+    height:18vw;
+
+}
+
+#title{
+    color:var(--lightText);
+    text-align: center;
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    font-size: 4vw;
+}
+
+#subtitle{
+    color:var(--lightText);
+    text-align: center;
+    font-size:2vw;
+}
+.bulb{
+    position:absolute;
+    z-index:-999999;
+    width:18vw;
+    top:calc(45vh - 10vw);
+}
+#bulb_rand{
+    left:80vw;
+}

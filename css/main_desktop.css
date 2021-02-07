@@ -1,24 +1,4 @@
 @media (min-width: 1000px) {
-:root{
-    --colorDarkBG: #20124d;
-    --colorDarkContent: #847dff;
-    --colorLightBG: #362a5f;
-    --colorLightContent: #a487ff;
-    --logoBackground: #2E1F5F;
-    --lightText: white;
-    color: var(--lightText);
-}
-*{
-    margin:0;
-    padding:0;
-    font-family: "Ubuntu";
-    outline: none;
-}
-
-
-body{
-    background:var(--colorDarkBG);
-}
 
 #mobile{
     display: none;
@@ -30,18 +10,6 @@ body{
 .row{
     padding-top: 30vh;
     width:100%;
-}
-#title{
-    margin-top:50px;
-    color:var(--lightText);
-    text-align: center;
-    text-shadow:2px 2px 0px #a487ff;
-    font-family: "Ubuntu";
-}
-#subtitle{
-    color:var(--lightText);
-    text-align: center;
-    text-shadow:2px 2px 0px #a487ff;
 }
 .land_img{
 }
