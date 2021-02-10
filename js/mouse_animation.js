@@ -30,7 +30,7 @@
         if(Xcoord<=1)Xcoord=1;
         if(Xcoord>=120)Xcoord=120;
         var url_blinkr = "./img/Cadre_blinkr/";
-        var url_sportier = "./img/Cadre_sportier/";
+        var url_sportier = "./img/Cadre_sportier/sportier";
         if(Xcoord<=9){
           url_blinkr=url_blinkr +"000"
           url_sportier=url_sportier +"000"
@@ -47,7 +47,7 @@
           url_blinkr = url_blinkr + Xcoord.toString(10);
           url_blinkr = url_blinkr+".webp";
           url_sportier = url_sportier + Xcoord.toString(10);
-          url_sportier = url_sportier+".webp";
+          url_sportier = url_sportier+".png";
         document.getElementById("blinkr").src = url_blinkr;
         document.getElementById("sportier").src = url_sportier;   
     }
@@ -70,7 +70,7 @@
          if(Xcoord<=1)Xcoord=1;
          if(Xcoord>=120)Xcoord=120;
          var url_blinkr = "./img/Cadre_blinkr/";
-         var url_sportier = "./img/Cadre_sportier/";
+         var url_sportier = "./img/Cadre_sportier/sportier";
          if(Xcoord<=9){
            url_blinkr=url_blinkr +"000"
            url_sportier=url_sportier +"000"
@@ -87,7 +87,7 @@
            url_blinkr = url_blinkr + Xcoord.toString(10);
            url_blinkr = url_blinkr+".webp";
            url_sportier = url_sportier + Xcoord.toString(10);
-           url_sportier = url_sportier+".webp";
+           url_sportier = url_sportier+".png";
          document.getElementById("blinkr").src = url_blinkr;
         document.getElementById("sportier").src = url_sportier;   
     

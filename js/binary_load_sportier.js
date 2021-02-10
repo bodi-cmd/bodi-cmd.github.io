@@ -6,12 +6,12 @@ img1 = new Array();
 
 function preload(i){
     img1[i] = new Image();
-    var url = "./img/Cadre_sportier/";
+    var url = "./img/Cadre_sportier/sportier";
     if(i<=9) url=url +"000"
     if(i>=10&&i<=99) url=url +"00"
     if(i>=100&&i<=999) url=url +"0"
     url = url + i.toString(10);
-    url = url+".webp";
+    url = url+".png";
     img1[i].src = url;
    // console.log(1);
     sleep(100);

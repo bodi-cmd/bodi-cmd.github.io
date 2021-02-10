@@ -1,16 +1,34 @@
 
 jQuery(document).ready(function(){
     render_projects(data);
+
+    $(document).on('click', '.tag', function(){
+        var filtered_data = [];
+        for(i in data){
+            var contains = false;
+            for(j in data[i].tags){
+                if(data[i].tags[j] == $(this).text()){
+                    contains = true;
+                }
+            }
+            if(contains)filtered_data.push(data[i]);
+        }
+        clear_projects();
+        render_projects(filtered_data);
+    });
 });
 
-
+function clear_projects(){
+    $("#projects").empty();
+    $("#spacer").remove();
+}
 
 function render_projects(data){
     for(var i=0;i<data.length;i++){
         $("#projects").append(`<div class="page">
         <h1 class="project_title">${data[i].titlu}</h1>
         <h2 class="project_subtitle">${data[i].subtitlu}</h2>
-        <img class="threesixty" id="${data[i].id}" src="./img/Cadre_sportier/0001.png" alt="">
+        <img class="threesixty" id="${data[i].id}" src="./img/Cadre_sportier/sportier0060.png" alt="">
         <div class="paragraphs_${data[i].id}"></div>
         <br style="clear:both" />
 
@@ -27,5 +45,5 @@ function render_projects(data){
     }
     }
     if(data.length%2 == 0){
-        $("#projects").after(`<div></div>`);}
+        $("#projects").after(`<div id="spacer"></div>`);}
 }
