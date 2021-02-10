@@ -269,12 +269,12 @@ span{
     float:left;
     margin-left:10vw;
     background-color: var(--colorLightContent);
-    height:50px;
+    height:30px;
     
     text-align:center;
     font-size:20px;
     color:var(--logoBackground);
-    padding-top:10px;
+    padding-top:8px;
     border-radius:25px;
     padding-inline:30px;
     margin-top:20px;

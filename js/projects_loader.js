@@ -28,7 +28,7 @@ function render_projects(data){
         $("#projects").append(`<div class="page">
         <h1 class="project_title">${data[i].titlu}</h1>
         <h2 class="project_subtitle">${data[i].subtitlu}</h2>
-        <img class="threesixty" id="${data[i].id}" src="./img/Cadre_sportier/sportier0060.png" alt="">
+        <img class="threesixty" id="${data[i].id}" src="" alt="">
         <div class="paragraphs_${data[i].id}"></div>
         <br style="clear:both" />
 

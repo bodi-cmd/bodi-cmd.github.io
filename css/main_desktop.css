@@ -196,20 +196,18 @@ span{
     float:left;
     margin-left:150px;
     background-color: var(--colorLightContent);
-    height:50px;
+    height:30px;
     min-width:100px;
+    padding:10px 0;
     text-align:center;
-    font-size:20px;
+    font-size:22px;
     color:var(--logoBackground);
-    padding-top:10px;
-    padding-bottom: 0px;
     margin-right:-120px;
     border-radius:25px;
     padding-inline:30px;
     margin-top:20px;
     box-shadow:-3px 0px 0px white;
     cursor: hand;
-    display: block;
 
 }
 

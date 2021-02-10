@@ -48,8 +48,9 @@
           url_blinkr = url_blinkr+".webp";
           url_sportier = url_sportier + Xcoord.toString(10);
           url_sportier = url_sportier+".png";
-        document.getElementById("blinkr").src = url_blinkr;
-        document.getElementById("sportier").src = url_sportier;   
+          if(document.getElementById("blinkr"))document.getElementById("blinkr").src = url_blinkr;
+        
+          if(document.getElementById("sportier"))document.getElementById("sportier").src = url_sportier;   
     }
   }
   else{
