@@ -15,6 +15,9 @@ jQuery(document).ready(function(){
         }
         clear_projects();
         render_projects(filtered_data);
+        $('html, body').animate({
+            scrollTop: $("#"+filtered_data[0].id+"_page").offset().top
+        }, 1000);
     });
 });
 
@@ -25,10 +28,10 @@ function clear_projects(){
 
 function render_projects(data){
     for(var i=0;i<data.length;i++){
-        $("#projects").append(`<div class="page">
+        $("#projects").append(`<div class="page" id="${data[i].id}_page">
         <h1 class="project_title">${data[i].titlu}</h1>
         <h2 class="project_subtitle">${data[i].subtitlu}</h2>
-        <img class="threesixty" id="${data[i].id}" src="" alt="">
+        <img class="threesixty" id="${data[i].id}" src="./img/cmlogo.png" alt="">
         <div class="paragraphs_${data[i].id}"></div>
         <br style="clear:both" />
 
