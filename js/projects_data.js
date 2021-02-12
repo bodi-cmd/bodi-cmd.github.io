@@ -6,7 +6,9 @@ var data =[
         text:
             [
             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore voluptatum aperiam minus suscipit inventore odit dolores quis veritatis, praesentium, possimus ad sapiente, ipsa amet voluptatibus quos repellat harum necessitatibus numquam ducimus. Minima odit laudantium, reiciendis aspernatur perferendis optio maiores eum praesentium vitae assumenda quo quia, similique atque veritatis fugit minus.",
+             "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore voluptatum aperiam minus suscipit inventore odit dolores quis veritatis, praesentium, possimus ad sapiente, ipsa amet voluptatibus quos repellat harum necessitatibus numquam ducimus. Minima odit laudantium, reiciendis aspernatur perferendis optio maiores eum praesentium vitae assumenda quo quia, similique atque veritatis fugit minus.",
              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore voluptatum aperiam minus suscipit inventore odit dolores quis veritatis, praesentium, possimus ad sapiente, ipsa amet voluptatibus quos repellat harum necessitatibus numquam ducimus. Minima odit laudantium, reiciendis aspernatur perferendis optio maiores eum praesentium vitae assumenda quo quia, similique atque veritatis fugit minus."
+
             ],
         tags:["UX", "Robotics","3D Printing"]
     },

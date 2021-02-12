@@ -2,6 +2,13 @@
 jQuery(document).ready(function(){
     render_projects(data);
 
+    $(".show_more_button").click(function(){
+        var id = $(this).attr('id');
+        $('.'+id).show();
+      //  console.log('.'+id);
+        $(this).remove();
+    });
+
     $(document).on('click', '.tag', function(){
         var filtered_data = [];
         for(i in data){
@@ -41,7 +48,16 @@ function render_projects(data){
         <br style="clear:both" />
     </div>`);
     for(var j=0;j<data[i].text.length;j++){
-        $(".paragraphs_"+data[i].id).append(`<p class="pp">${data[i].text[j]}</p>`);
+        if(data[i].text.length>1){
+            if(j == 0){
+                $(".paragraphs_"+data[i].id).append(`<p class="pp">${data[i].text[j]}</p><p id="p_${data[i].id}" class="show_more_button">show more...</p>`);
+            }
+            else $(".paragraphs_"+data[i].id).append(`<p class="pp more p_${data[i].id}">${data[i].text[j]}</p>`);
+
+        }
+        else{
+            $(".paragraphs_"+data[i].id).append(`<p class="pp">${data[i].text[j]}</p>`);
+        }
     }
     for(var j=0;j<data[i].tags.length;j++){
         $(".tags_"+data[i].id).append(`<div class="tag">${data[i].tags[j]}</div>`);

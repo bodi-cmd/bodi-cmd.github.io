@@ -1,5 +1,14 @@
 @media (min-width: 1000px) {
 
+    .ideation img{
+        width:18vw;
+        height:18vw;
+    }
+
+    .show_more_button{
+        display: none;
+    }
+
 #mobile{
     display: none;
 }
@@ -144,7 +153,7 @@ span{
     background: none;
     border:2px solid var(--colorDarkContent);
     margin-left:150px;
-    padding:10px;
+    padding:0 10px;
     color:var(--lightText);
 
 }
@@ -155,7 +164,7 @@ span{
     font-size: 20px;
     background: none;
     border:2px solid var(--colorDarkContent);
-    padding:10px;
+    padding:0 10px;
     color:var(--lightText);
 }
 

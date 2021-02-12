@@ -1,5 +1,24 @@
 @media (max-width: 1000px) {
 
+    .ideation img{
+        width:50px;
+        height:50px;
+    }
+
+    .more{
+        display: none;
+    }
+    .show_more_button{
+        margin-top:5px;
+        margin-left:30px;
+        color:#cebeff;
+        text-decoration:underline;
+        cursor: pointer;
+    }
+
+
+
+
 #pc{
 display:none;
 }
@@ -65,7 +84,6 @@ width:80vw;
     font-size:25px;
     margin-top: 50px;
     margin-bottom: 100px;
-    
     outline:none;
 }
 mark{
@@ -141,28 +159,27 @@ span{
     margin-right:10vw;
     font-family: "Ubuntu";
 }
-.blinkr p{
+.pp{
     margin-top:60px;
-    text-align: left;
-    margin-left:10vw;
+    text-align: inherit;
     margin-left:30px;
     width:80vw;
     color:var(--lightText);
 }
 
-#sportier_id{
+.project_title{
     padding-top:50px;
     color:var(--lightText);
     text-align: left;
-    margin-left:10vw;
+    margin-left:7vw;
     text-shadow:2px 2px 0px #a487ff;
     font-family: "Ubuntu";
 }
 
-#sportier_subtitle{
+.project_subtitle{
     color:var(--lightText);
     text-align: left;
-    margin-left:10vw;
+    margin-left:7vw;
     font-family: "Ubuntu";
 }
 .sportier p{
@@ -216,7 +233,7 @@ span{
     background: none;
     border:2px solid var(--colorDarkContent);
     margin-left:10vw;
-    padding:10px;
+    padding:0 10px;
     color:var(--lightText);
 
 }
@@ -228,7 +245,7 @@ span{
     font-size: 20px;
     background: none;
     border:2px solid var(--colorDarkContent);
-    padding:10px;
+    padding:0 10px;
     color:var(--lightText);
 }
 
@@ -267,7 +284,7 @@ span{
 }
 .tag{
     float:left;
-    margin-left:10vw;
+    margin-left:20px;
     background-color: var(--colorLightContent);
     height:30px;
     
@@ -276,7 +293,7 @@ span{
     color:var(--logoBackground);
     padding-top:8px;
     border-radius:25px;
-    padding-inline:30px;
+    padding-inline:15px;
     margin-top:20px;
     box-shadow:-3px 0px 0px white;
 }
