@@ -1,11 +1,12 @@
 (function() {
   if ($(window).width() >1000) {
     // code for small viewports
-
     document.onmousemove = handleMouseMove;
 
-    
     function handleMouseMove(event) {
+
+      for(var i in data){
+
         var eventDoc, doc, body;
 
         event = event || window.event; // IE-ism
@@ -29,28 +30,22 @@
        // console.log(Xcoord+"   "+ event.pageX+"   "+ window.innerWidth)
         if(Xcoord<=1)Xcoord=1;
         if(Xcoord>=120)Xcoord=120;
-        var url_blinkr = "./img/Cadre_blinkr/";
-        var url_sportier = "./img/Cadre_sportier/sportier";
+        var url_project = data[i].animation.url;
         if(Xcoord<=9){
-          url_blinkr=url_blinkr +"000"
-          url_sportier=url_sportier +"000"
+          url_project=url_project +"000"
         }
         if(Xcoord>=10&&Xcoord<=99){
-          url_blinkr=url_blinkr +"00"
-          url_sportier=url_sportier +"00"
+          url_project=url_project +"00"
         }
         if(Xcoord>=100&&Xcoord<=999){
-          url_blinkr=url_blinkr +"0"
-          url_sportier=url_sportier +"0"
+          url_project=url_project +"0"
 
         }
-          url_blinkr = url_blinkr + Xcoord.toString(10);
-          url_blinkr = url_blinkr+".webp";
-          url_sportier = url_sportier + Xcoord.toString(10);
-          url_sportier = url_sportier+".png";
-          if(document.getElementById("blinkr"))document.getElementById("blinkr").src = url_blinkr;
-        
-          if(document.getElementById("sportier"))document.getElementById("sportier").src = url_sportier;   
+          url_project = url_project + Xcoord.toString(10);
+          url_project = url_project+data[i].animation.extension;
+          if(document.getElementById(data[i].id))document.getElementById(data[i].id).src = url_project;
+
+      }
     }
   }
   else{
@@ -62,40 +57,36 @@
     function checkscroll(){
 
         var scroll = $(window).scrollTop();
+
+        for(var i in data){
+
         // Do something
-        console.log(scroll - $("#blinkr").offset().top);
+        //console.log(scroll - $("#blinkr").offset().top);
     
     
-        var Xcoord=(Math.floor((scroll - $("#blinkr").offset().top+800)/7));
+        var Xcoord=(Math.floor((scroll - $("#"+data[i].id).offset().top+800)/7));
         // console.log(Xcoord+"   "+ event.pageX+"   "+ window.innerWidth)
          if(Xcoord<=1)Xcoord=1;
          if(Xcoord>=120)Xcoord=120;
-         var url_blinkr = "./img/Cadre_blinkr/";
-         var url_sportier = "./img/Cadre_sportier/sportier";
+         var url_project = data[i].animation.url;
          if(Xcoord<=9){
-           url_blinkr=url_blinkr +"000"
-           url_sportier=url_sportier +"000"
+          url_project=url_project +"000"
          }
          if(Xcoord>=10&&Xcoord<=99){
-           url_blinkr=url_blinkr +"00"
-           url_sportier=url_sportier +"00"
+          url_project=url_project +"00"
          }
          if(Xcoord>=100&&Xcoord<=999){
-           url_blinkr=url_blinkr +"0"
-           url_sportier=url_sportier +"0"
+          url_project=url_project +"0"
  
          }
-           url_blinkr = url_blinkr + Xcoord.toString(10);
-           url_blinkr = url_blinkr+".webp";
-           url_sportier = url_sportier + Xcoord.toString(10);
-           url_sportier = url_sportier+".png";
-         document.getElementById("blinkr").src = url_blinkr;
-        document.getElementById("sportier").src = url_sportier;   
+         url_project = url_project + Xcoord.toString(10);
+         url_project = url_project+data[i].animation.extension;
+         if(document.getElementById(data[i].id))document.getElementById(data[i].id).src = url_project;
     
     
+        }
     
-    
-      };
+      }
 
 
         
